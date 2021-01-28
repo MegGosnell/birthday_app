@@ -11,5 +11,6 @@ class BirthdayGreeter < Sinatra::Base
         erb :greeter
     end 
 
+
     run! if app_file == $0
 end 
