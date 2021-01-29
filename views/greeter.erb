@@ -1,1 +1,18 @@
-Happy birthday <%= @name.capitalize %>
+<head>
+<link rel="stylesheet" type="text" href="style">
+<head>
+
+<!DOCTYPE html>
+<html> 
+<body>
+    <center>
+		<h1>Hi <%= @greeter.getName %>, your birthday is <%= @greeter.getBdDay %> of <%= @greeter.getBdMonthName %> </h1>
+
+		<% if @greeter.getDtb > 0  %>
+  			<h2>There are <%= @greeter.getDtb %> days until your birthday!</h2>
+		<% else %>
+ 			<h2>Happy Birthday!</h2>
+		<% end %>
+    </center>
+	</body>
+</html>
